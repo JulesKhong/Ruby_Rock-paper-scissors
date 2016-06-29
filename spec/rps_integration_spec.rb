@@ -9,6 +9,6 @@ describe('the game results',{:type => :feature}) do
     select('Rock', :from => 'player_one')
     # select('Paper', :from => 'player_two')
     click_button('Play')
-    expect(page).to have_content('lose')
+    expect(page).to have_content('Play again')
   end
 end

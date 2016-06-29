@@ -3,18 +3,17 @@
 <div class="row">
   <div class="col-sm-4">
     <h2>Player One</h2>
-    <img src="img/<%= @user_play %>.jpg" alt="<%= @user_play %>" />
+    <img src="img/<%= @user_play %><%= @p1_play %>.jpg" alt="<%= @user_play %><%= @p1_play %>" />
   </div>
   <div class="col-sm-2">
     <h2>VS.</h2>
   </div>
   <div class="col-sm-4">
     <h2>Player Two</h2>
-    <img src="img/<%= @ai_play %>.jpg" alt="<%= @ai_play %>" />
+    <img src="img/<%= @ai_play %><%= @p2_play %>.jpg" alt="<%= @ai_play %><%= @p2_play %>" />
   </div>
 </div>
 <h1>Player One, you <%= @outcome %>!</h1>
 <form action="/" method="get">
   <button class="btn-danger" type="submit" name="reset">Play again</button>
-
 </form>
